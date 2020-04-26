@@ -12,11 +12,11 @@ namespace Snake
         public int y;
         public char sym;
 
-        public Point() //конструктор ничего не возвращает
+        public Point() 
         {           
         }
 
-        public Point(int _x, int _y, char _sym) // Конструктор запоминает новые значения в этой точке в переменных выше
+        public Point(int _x, int _y, char _sym) 
         {
             x = _x;
             y = _y;
