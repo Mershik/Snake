@@ -31,7 +31,7 @@ namespace Snake
         public void DrawVertical()
         {
             Console.SetCursorPosition(x, y);
-            Console.WriteLine(sym);
+            Console.Write(sym);
         }
     }
 }

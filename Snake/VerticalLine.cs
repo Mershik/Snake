@@ -25,7 +25,7 @@ namespace Snake
         {
             foreach (Point i in plist) 
             {
-                i.DrawVertical();
+                i.Draw();
             }
         }
     }
