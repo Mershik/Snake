@@ -41,11 +41,11 @@ namespace Snake
 
         //static void Draw(int x, int y, char sym)   //Эту функцию заменили классом Draw, который находится в Program
         //{
-<<<<<<< HEAD
+
         //    Console.SetCursorPosition(x, y); 
-=======
+
         //    Console.SetCursorPosition(x, y);
->>>>>>> lesson3
+
         //    Console.Write(sym);
 
         //}
