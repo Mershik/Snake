@@ -10,12 +10,8 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1,3,'*');  
-            p1.Draw();
-
-            Point p2 = new Point(4,5,'#');
-            p2.Draw();
-
+            
+            //Отрисовка рамки
             HotizontalLine line = new HotizontalLine(1,30,0,'+');
             line.Drow();
             HotizontalLine line1 = new HotizontalLine(1, 30, 10, '+');
@@ -25,6 +21,10 @@ namespace Snake
             line2.Drow();
             VerticalLine line3 = new VerticalLine(1, 9, 30, '+');
             line3.Drow();
+
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
 
             Console.ReadLine();
         }
