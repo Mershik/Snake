@@ -28,6 +28,10 @@ namespace Snake
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
-
+        public void DrawVertical()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
+        }
     }
 }

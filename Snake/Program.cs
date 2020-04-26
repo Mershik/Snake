@@ -16,9 +16,15 @@ namespace Snake
             Point p2 = new Point(4,5,'#');
             p2.Draw();
 
-            HotizontalLine line = new HotizontalLine(5,10,8,'+');// задаем положение точки
+            HotizontalLine line = new HotizontalLine(1,30,0,'+');
             line.Drow();
+            HotizontalLine line1 = new HotizontalLine(1, 30, 10, '+');
+            line1.Drow();
 
+            VerticalLine line2 = new VerticalLine(1, 9, 1, '+');
+            line2.Drow();
+            VerticalLine line3 = new VerticalLine(1, 9, 30, '+');
+            line3.Drow();
 
             Console.ReadLine();
         }
