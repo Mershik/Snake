@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class HotizontalLine
+    class HotizontalLine : Figure
     {
-        List<Point> plist; //создается набор точек
-         
+
         public HotizontalLine(int xLeft, int xReight, int y, char sym) //констуктор класа (метод, который будет вызываться при создании линии
         {
             plist = new List<Point>(); // создаем пустой список
@@ -22,12 +21,5 @@ namespace Snake
  
         }
 
-        public void Drow() // метод для фывода на экран точек
-        {
-            foreach (Point i in plist) //пробегаем по всем точкам
-            {
-                i.Draw();
-            }
-        }
     }
 }
