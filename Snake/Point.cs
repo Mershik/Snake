@@ -12,11 +12,11 @@ namespace Snake
         public int y;
         public char sym;
 
-        public Point() 
-        {           
+        public Point()
+        {
         }
 
-        public Point(int _x, int _y, char _sym) 
+        public Point(int _x, int _y, char _sym)
         {
             x = _x;
             y = _y;
@@ -40,7 +40,7 @@ namespace Snake
         {
             if (direction == Direction.RIGHT)
             {
-                x +=  offset;
+                x += offset;
             }
             else if (direction == Direction.LEFT)
             {
@@ -54,6 +54,11 @@ namespace Snake
             {
                 y = y + offset;
             }
+        }
+
+        public bool IsHit(Point p)
+        {
+            return p.x == this.x && p.y == this.y; 
         }
 
         public void DrawVertical()
